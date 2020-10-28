@@ -4,16 +4,30 @@
 const isLoop = (linkedlist) => {
   let currentNode = linkedlist.head;
   let observedNodes = {};
+  // while loop
+  // to traverse a linkedlist you 2always start at the head
 
-  for (let i = 0; i < 10; i++) {
-    console.log("CURRENT NODE: ", currentNode);
+  while (currentNode.next !== null) {
+    console.log("CURRENT NODE: ", currentNode.value);
+
+    if (observedNodes[currentNode.value]) {
+      return true;
+    } else {
+      observedNodes[currentNode.value] = 1;
+      console.log(
+        "observedNode first occurrence",
+        observedNodes[currentNode.value]
+      );
+    }
     currentNode = currentNode.next;
-
-    // if (observedNodes[currentNode.value])
   }
+  console.log(observedNodes, " <--------observed node obj");
+  return false;
 };
 
 /*
+ let runnerA = linkedlist;
+  let runnerB = linkedlist;
 EXTRA CREDIT:
 
 Write a function findLoop() that consumes a linkedlist with a loop
