@@ -1,9 +1,7 @@
-'use strict';
+"use strict";
 
 // Complete this algo
-const binarySearch = (array, target) => {
-	
-};
+const binarySearch = (array, target) => {};
 
 /*
 	EXTRA CREDIT:
@@ -14,4 +12,4 @@ const binarySearch = (array, target) => {
 
 */
 
-module.exports = binarySearch
+module.exports = binarySearch;
