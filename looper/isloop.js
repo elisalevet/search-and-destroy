@@ -2,12 +2,14 @@
 
 //Complete this algo
 const isLoop = (linkedlist) => {
-  const currentNode = linkedlist.head;
+  let currentNode = linkedlist.head;
+  let observedNodes = {};
 
-  for (let i = 0; i < 5; i++) {
-    console.log(currentNode.next, "Current Node NEXT");
+  for (let i = 0; i < 10; i++) {
+    console.log("CURRENT NODE: ", currentNode);
     currentNode = currentNode.next;
-    console.log(currentNode.next, "NODE  in THE LOOOP");
+
+    // if (observedNodes[currentNode.value])
   }
 };
 
